@@ -1,0 +1,81 @@
+cmake_minimum_required(VERSION 3.4)
+
+project(cppunittest VERSION 1.0)
+
+include_directories(
+  .
+  ${CMAKE_SOURCE_DIR}/include
+)
+
+add_executable(cppunittest
+  assertion_traitsTest.cpp
+  assertion_traitsTest.h
+  BaseTestCase.cpp
+  BaseTestCase.h
+  CoreSuite.h
+  CppUnitTestMain.cpp
+  CppUnitTestSuite.cpp
+  ExceptionTest.cpp
+  ExceptionTest.h
+  ExceptionTestCaseDecoratorTest.h
+  ExceptionTestCaseDecoratorTest.cpp
+  ExtensionSuite.h
+  FailureException.h
+  HelperMacrosTest.cpp
+  HelperMacrosTest.h
+  HelperSuite.h
+  MessageTest.h
+  MessageTest.cpp
+  MockFunctor.h
+  MockProtector.h
+  MockTestCase.h
+  MockTestCase.cpp
+  MockTestListener.cpp
+  MockTestListener.h
+  OrthodoxTest.cpp
+  OrthodoxTest.h
+  OutputSuite.h
+  RepeatedTestTest.cpp
+  RepeatedTestTest.h
+  StringToolsTest.h
+  StringToolsTest.cpp
+  SubclassedTestCase.cpp
+  SubclassedTestCase.h
+  SynchronizedTestResult.h
+  TestAssertTest.cpp
+  TestAssertTest.h
+  TestCallerTest.cpp
+  TestCallerTest.h
+  TestCaseTest.cpp
+  TestCaseTest.h
+  TestDecoratorTest.cpp
+  TestDecoratorTest.h
+  TestFailureTest.cpp
+  TestFailureTest.h
+  TestPathTest.h
+  TestPathTest.cpp
+  TestResultCollectorTest.cpp
+  TestResultCollectorTest.h
+  TestResultTest.cpp
+  TestResultTest.h
+  TestSetUpTest.cpp
+  TestSetUpTest.h
+  TestSuiteTest.cpp
+  TestSuiteTest.h
+  TestTest.cpp
+  TestTest.h
+  ToolsSuite.h
+  TrackedTestCase.cpp
+  TrackedTestCase.h
+  UnitTestToolSuite.h
+  XmlElementTest.h
+  XmlElementTest.cpp
+  XmlOutputterTest.h
+  XmlOutputterTest.cpp
+  XmlUniformiser.h
+  XmlUniformiser.cpp
+  XmlUniformiserTest.h
+  XmlUniformiserTest.cpp
+  )
+
+target_link_libraries(cppunittest cppunit)
