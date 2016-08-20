@@ -9,6 +9,10 @@ include_directories(
   ${CMAKE_SOURCE_DIR}/include
 )
 
+if(NOT CMAKE_DEBUG_POSTFIX)
+  set(CMAKE_DEBUG_POSTFIX d)
+endif()
+
 add_library(cppunit SHARED
   BriefTestProgressListener.cpp
   TestResultCollector.cpp

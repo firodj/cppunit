@@ -6,11 +6,13 @@ set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${CMAKE_SOURCE_DIR}/lib)
 set(CMAKE_ARCHIVE_OUTPUT_DIRECTORY ${CMAKE_SOURCE_DIR}/lib)
 
 add_subdirectory(src/cppunit)
+add_subdirectory(src/DllPlugInTester)
 
 add_subdirectory(examples/simple)
 add_subdirectory(examples/ClockerPlugIn)
+add_subdirectory(examples/DumperPlugIn)
 
-enable_testing()
 add_subdirectory(examples/cppunittest)
 
+enable_testing()
 add_test(NAME cppunit-test COMMAND cppunittest)
