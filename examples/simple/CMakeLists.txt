@@ -11,3 +11,6 @@ include_directories(
 
 add_executable(simple ExampleTestCase.cpp Main.cpp)
 target_link_libraries(simple cppunit)
+
+add_library(simple_plugin SHARED ExampleTestCase.cpp SimplePlugIn.cpp)
+target_link_libraries(simple_plugin cppunit)
